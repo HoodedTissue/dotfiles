@@ -1,0 +1,28 @@
+{
+	"include": "~/.config/waybar/modules.jsonc",
+	"position":"top",
+	"height": 50,
+	"spacing": 5,
+	"modules-left":[
+		"custom/launcher",
+		"custom/bar",
+		"hyprland/workspaces"
+		],
+	
+	"modules-center":[
+		"clock"
+		],
+	
+	"modules-right":[
+		"pulseaudio",
+		"custom/bar",
+		"backlight",
+		"custom/bar",
+		"battery",
+		"custom/bar",
+		"bluetooth",
+		"custom/bar",
+		"network"
+		// possibly also add "hyprland/language" and some sort of "bluetooth"
+	]
+}	

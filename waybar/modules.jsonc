@@ -1,0 +1,86 @@
+{
+	// universal
+
+	"custom/bar": {
+		"format": ""
+	},
+	// left side
+
+	"custom/launcher": {
+		"format": "󰀻 ",
+		"on-click": "wofi --show drun"
+	},
+
+	"hyprland/workspaces": {
+	"format": "{icon}",
+	"on-click": "activate",
+	"all-outputs": "true",
+		"format-icons": {
+			"1":"1",
+			"2":"2",
+			"3":"3",
+			"4":"4",
+			"5":"5",
+			"6":"6",
+			"7":"7",
+			"8":"8",
+			"9":"9",
+			"10":"10"
+			},
+		"tooltip": false,
+		"persistent-workspaces": {
+			"*": 5,
+			"HDMI-A-1": 5,
+		       	"eDP-1": 5	
+		}
+	},
+	 
+	//middle
+
+	"clock": {
+		"format": "  {:%H:%M %p}"
+	},
+
+	// right
+	"backlight": {
+		"format": "{icon} {percent}",
+		"format-icons": [""],
+    "on-click": "hyprshade toggle blue-light-filter"
+	},
+	
+	"battery":{
+		"states": {
+			"warning": 30,
+			"critical": 15
+		},
+		"format": "{icon} {capacity}",
+		// "format-plugged":" 󱐋 ",
+		"format-icons": ["󰁺", "󰁼", "󰁾", "󰂁", "󰁹"]
+	},
+
+	"bluetooth": {
+		"format": " {status}",
+		//"on-click": "env GDK_BACKEND=x11 overskride"
+		"on-click": "blueman-manager",
+
+		"tooltip-format-disconnected": "off"
+	},
+
+	"network": {
+		"format-wifi": "{icon}   ",
+		"format-disconnected": "󰤭   ",
+		"format-icons": ["󰤯", "󰤟", "󰤢", "󰤥", "󰤨"],
+		"tooltip-format-wifi": "{essid} ({signalStrength})",
+		"tooltip-format-disconnected": "off"
+	},
+
+	"pulseaudio": {
+		"scroll-step": 5,
+		"format": "{icon}  {volume}%",
+		"format-source-muted": " 0%",
+		"format-icons": {
+			"default":["", ""]
+		},
+		"on-click": "pavucontrol"
+	}
+}

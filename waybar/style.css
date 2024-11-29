@@ -1,0 +1,40 @@
+* {
+    font-family: Liga SFMono Nerd Font, Iosevka Nerd Font, Roboto, Helvetica, Arial, sans-serif;
+    font-size:17px;
+}
+
+window#waybar {
+	background-color: #101012;
+}
+#custom-launcher {
+	padding: 0 0 0 40px;
+}
+
+#network {
+	padding: 0 20px 0 0;
+}
+#custom-bar {
+	padding: 0 15px 0 15px;
+}
+
+#workspaces {
+       margin: 0 -10px;	
+}
+#workspaces button.empty {
+	color: #858893;
+}
+
+#workspaces button {
+	color: #bfc9db;
+}
+
+#workspaces button.active {
+	color: #8AB4F8;
+}
+
+
+/*
+#battery.plugged {
+	color: #a5d6a7;
+}
+*/
