@@ -6,20 +6,34 @@
 window#waybar {
 	background-color: #101012;
 }
+
+
 #custom-launcher {
-	padding: 0 0 0 40px;
+  /*background-color: #1e1e21;*/
+  margin: 7px 7px 7px 20px;
+  background-color: #212125;
+  padding-left: 15px;
+  padding-right: 15px;
+  border-radius: 5px;
+}
+/* right side */
+#network {
+	padding: 0 5px 0 15px;
 }
 
-#network {
-	padding: 0 20px 0 0;
+#bluetooth {
+  margin: 0 15px 0 15px;
 }
+
+#pulseaudio {
+  padding: 0 15px 0 0;
+}
+
+
 #custom-bar {
 	padding: 0 15px 0 15px;
 }
 
-#workspaces {
-       margin: 0 -10px;	
-}
 #workspaces button.empty {
 	color: #858893;
 }
@@ -29,7 +43,14 @@ window#waybar {
 }
 
 #workspaces button.active {
-	color: #8AB4F8;
+	color: #bfc9db;
+}
+
+.modules-right {
+  background-color: #212125;
+  margin: 7px 20px 7px 7px;
+  border-radius: 5px;
+
 }
 
 

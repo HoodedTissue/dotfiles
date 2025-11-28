@@ -5,7 +5,7 @@
 	"spacing": 5,
 	"modules-left":[
 		"custom/launcher",
-		"custom/bar",
+		//"custom/bar",
 		"hyprland/workspaces"
 		],
 	
@@ -14,15 +14,9 @@
 		],
 	
 	"modules-right":[
-		"pulseaudio",
-		"custom/bar",
-		"backlight",
-		"custom/bar",
-		"battery",
-		"custom/bar",
+    "network",
 		"bluetooth",
-		"custom/bar",
-		"network"
+		"pulseaudio"
 		// possibly also add "hyprland/language" and some sort of "bluetooth"
 	]
 }	

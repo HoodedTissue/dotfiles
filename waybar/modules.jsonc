@@ -7,7 +7,7 @@
 	// left side
 
 	"custom/launcher": {
-		"format": "󰀻 ",
+		"format": "󰀻",
 		"on-click": "wofi --show drun"
 	},
 
@@ -16,16 +16,8 @@
 	"on-click": "activate",
 	"all-outputs": "true",
 		"format-icons": {
-			"1":"1",
-			"2":"2",
-			"3":"3",
-			"4":"4",
-			"5":"5",
-			"6":"6",
-			"7":"7",
-			"8":"8",
-			"9":"9",
-			"10":"10"
+        //"active": "◆",
+        //"default": "◇",
 			},
 		"tooltip": false,
 		"persistent-workspaces": {
@@ -59,7 +51,8 @@
 	},
 
 	"bluetooth": {
-		"format": " {status}",
+		"format": "",
+    "format-disabled": "󰂲",
 		//"on-click": "env GDK_BACKEND=x11 overskride"
 		"on-click": "blueman-manager",
 
@@ -67,8 +60,8 @@
 	},
 
 	"network": {
-		"format-wifi": "{icon}   ",
-		"format-disconnected": "󰤭   ",
+		"format-wifi": "{icon}",
+		"format-disconnected": "󰤭",
 		"format-icons": ["󰤯", "󰤟", "󰤢", "󰤥", "󰤨"],
 		"tooltip-format-wifi": "{essid} ({signalStrength})",
 		"tooltip-format-disconnected": "off"
@@ -76,10 +69,10 @@
 
 	"pulseaudio": {
 		"scroll-step": 5,
-		"format": "{icon}  {volume}%",
-		"format-source-muted": " 0%",
+		"format": "{icon}", 
+		"format-source-muted": "",
 		"format-icons": {
-			"default":["", ""]
+			"default":["󰕿","󰖀", "󰕾"]
 		},
 		"on-click": "pavucontrol"
 	}
